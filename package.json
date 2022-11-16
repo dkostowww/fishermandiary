@@ -1,0 +1,22 @@
+{
+  "name": "repo",
+  "version": "0.1.0",
+  "author": "dkostowww",
+  "license": "ICS",
+  "dependencies": {
+    "concurrently": "^7.5.0",
+    "cors": "^2.8.5"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run start:trips \" \"npm run start:user \" \"npm run start:auth \" \"npm run start:front \"",
+    "start:dev": "concurrently \"npm run start:dev:dev:trips \" \"npm run start:dev:user \" \"npm run start:dev:auth \" \"npm run start:dev:front \"",
+    "start:trips": "npm --prefix trips-service run start:node",
+    "start:dev:trips": "npm --prefix trips-service run start:dev",
+    "start:user": "npm --prefix user-service run start:node",
+    "start:dev:user": "npm --prefix user-service run start:dev",
+    "start:auth": "npm --prefix auth-service run start:node",
+    "start:dev:auth": "npm --prefix auth-service run start:dev",
+    "start:front": "npm --prefix front run start",
+    "start:dev:front": "npm --prefix front run start"
+  }
+}

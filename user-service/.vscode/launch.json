@@ -1,0 +1,14 @@
+{
+    "version": "0.1.0",
+    "configurations": [
+        {
+            "name": "Debug User service",
+            "type": "node",
+            "request": "attach",
+            "port": 9226,
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        }
+    ]
+}
