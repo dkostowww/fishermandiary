@@ -18,5 +18,9 @@
     "start:dev:auth": "npm --prefix auth-service run start:dev",
     "start:front": "npm --prefix front run start",
     "start:dev:front": "npm --prefix front run start"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb": "^19.0.4"
   }
 }

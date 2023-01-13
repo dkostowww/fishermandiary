@@ -1,13 +1,28 @@
-import initialState from '../../utils/reduxInitialState'
+import initialState from '../initial-state'
 
-export const fishingTripsReducer = (
-    state = initialState.fishingTrips,
-    action
+const fishingTripsReducer = (
+  state = initialState.fishingTrips,
+  action
 ) => {
-    switch(action.type) {
-        case 'FISHING_TRIPS_FETCH':
-            return { trips: action.payload.fishingTrips, loading: false }
-        default:
-            return { ...state }
-    }
+  switch (action.type) {
+    case 'FISHING_TRIPS_FETCHED':
+      return {
+        ...state,
+        trips: action.tripsData,
+      }
+    case 'FISHING_TRIPS_FETCHING':
+      return {
+        ...state,
+        isFetching: action.isFetching
+      }
+    case 'FISHING_TRIPS_FETCH_ERROR':
+      return {
+        ...state,
+        hasFetchError: action.hasFetchError
+      }
+    default:
+      return { ...state }
+  }
 }
+
+export default fishingTripsReducer
