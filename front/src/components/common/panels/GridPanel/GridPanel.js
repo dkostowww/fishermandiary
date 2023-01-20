@@ -24,29 +24,29 @@ const GridPanel = ({
       <div className="table-responsive">
         <table className="table table-striped table-bordered">
           {
-                dataLoading
-                  ? (
-                    <tbody>
-                      <tr>
-                        <td>Data loading</td>
-                      </tr>
-                    </tbody>
-                  )
-                  : (
-                    <>
-                      <thead>
-                        <tr>
-                          {tableColumns}
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {
-                                tableRows.length === 0 ? <tr><td>No data found.</td></tr>
-                                  : tableRows
-                            }
-                      </tbody>
-                    </>
-                  )
+            dataLoading
+              ? (
+                <tbody>
+                  <tr>
+                    <td>Data loading</td>
+                  </tr>
+                </tbody>
+              )
+              : (
+                <>
+                  <thead>
+                    <tr>
+                      {tableColumns}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {
+                      tableRows.length === 0 ? <tr><td>No data found.</td></tr>
+                        : tableRows
+                    }
+                  </tbody>
+                </>
+            )
         }
         </table>
       </div>
