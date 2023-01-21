@@ -18,9 +18,15 @@ const Navigation = () => (
         </a>
       </li>
       <li>
-        <NavLink to="login">
+        <NavLink to="sign-in">
           <FontAwesomeIcon icon="sign-in" className="fa" />
-          Login
+          Sign In
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="sign-up">
+          <FontAwesomeIcon icon="user-plus" className="fa" />
+          Sign Up
         </NavLink>
       </li>
       <li>

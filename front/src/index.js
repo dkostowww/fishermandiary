@@ -7,7 +7,8 @@ import store from './redux'
 import App from './components/App'
 import Error from './components/pages/Error'
 import Dashboard from './components/pages/Dashboard'
-import Login from './components/pages/Login';
+import SignIn from './components/pages/SignIn';
+import SignUp from './components/pages/SignUp';
 
 
 const router = createBrowserRouter([
@@ -17,7 +18,8 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       { index: true, element: <Dashboard /> },
-      { path: "login", element: <Login /> },
+      { path: "sign-in", element: <SignIn /> },
+      { path: "sign-up", element: <SignUp /> },
       // { path: "post/add", element: <AddPost /> },
       // {
       //   path: "post/:id",
