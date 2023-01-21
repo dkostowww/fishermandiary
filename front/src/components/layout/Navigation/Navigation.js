@@ -19,7 +19,7 @@ const Navigation = () => (
       </li>
       <li>
         <NavLink to="login">
-          <FontAwesomeIcon icon="eject" className="fa" />
+          <FontAwesomeIcon icon="sign-in" className="fa" />
           Login
         </NavLink>
       </li>
