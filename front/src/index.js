@@ -9,6 +9,7 @@ import Error from './components/pages/Error'
 import Dashboard from './components/pages/Dashboard'
 import SignIn from './components/pages/SignIn';
 import SignUp from './components/pages/SignUp';
+import Trips from './components/pages/Trips';
 
 
 const router = createBrowserRouter([
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       { index: true, element: <Dashboard /> },
       { path: "sign-in", element: <SignIn /> },
       { path: "sign-up", element: <SignUp /> },
+      { path: "trips", element: <Trips /> },
       // { path: "post/add", element: <AddPost /> },
       // {
       //   path: "post/:id",

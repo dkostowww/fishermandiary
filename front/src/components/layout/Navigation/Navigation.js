@@ -12,10 +12,10 @@ const Navigation = () => (
         </NavLink>
       </li>
       <li>
-        <a href="data-visualization.html">
-          <FontAwesomeIcon icon="bar-chart" className="fa" />
-          Charts
-        </a>
+        <NavLink to="/trips">
+          <FontAwesomeIcon icon="fish" className="fa" />
+          All Trips
+        </NavLink>
       </li>
       <li>
         <NavLink to="sign-in">
@@ -30,7 +30,7 @@ const Navigation = () => (
         </NavLink>
       </li>
       <li>
-        <a href="login.html">
+        <a href="/">
           <FontAwesomeIcon icon="eject" className="fa" />
           Sign Out
         </a>

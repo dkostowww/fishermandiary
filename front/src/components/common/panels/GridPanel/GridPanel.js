@@ -10,7 +10,7 @@ const GridPanel = ({
     <td key={headingTitle}>{headingTitle}</td>
   ))
   const tableRows = tableData.map((row) => (
-    <tr key={row}>
+    <tr key={row._id}>
       {generateGridRowData(row)}
     </tr>
   ))

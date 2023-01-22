@@ -25,7 +25,7 @@ const SignInForm = () => {
           <div className="form-group">
             <div className="checkbox squaredTwo">
               <input type="checkbox" id="c1" name="cc" />
-              <label for="c1">
+              <label htmlFor="c1">
                 <span></span>Remember me
               </label>
             </div>				    
